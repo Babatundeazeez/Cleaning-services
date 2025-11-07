@@ -1,12 +1,18 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import {useForm} from 'react-hook-form'
+import { authContext } from '../AuthContext/AuthContext'
+import ModalComponent from '../Components/ModalComponent'
 
 const Booking = () => {
 
-  const {register, handleSubmit, formState: {errors}} = useForm()
+  const {register, handleSubmit,reset, formState: {errors}} = useForm()
 
 
   const [isLoading, setIsLoading] = useState(false)
+  const [content, setContent] = useState("")
+  const { showModal,setShowModal,modalStatus, setModalStatus,modalText, setModalText} = useContext(authContext)
+
+
 
   const onSubmit = async(data) =>{
     //console.log(data);
@@ -20,8 +26,10 @@ const Booking = () => {
     formData.append("message", data.message)
     //alert("Form submitted successfully")
 
+
+    const BookingURL = import.meta.env.VITE_BASE_URL
     try {
-      const res = await fetch("http://localhost:3000/api/booking", {
+      const res = await fetch(`${BookingURL}/booking`, {
         method : "POST",
         headers: {
           "Content-Type" : "application/json"
@@ -31,7 +39,12 @@ const Booking = () => {
 
       const shows = await res.json();
       if (shows.success){
-        alert("Booking submitted successfully")
+        setShowModal(true)
+        setModalText("Booking submitted successfully")
+        setModalStatus("success")
+        reset()
+        setContent("")
+       // alert("Booking submitted successfully")
       }
       else{
         alert("something went wrong")
@@ -39,6 +52,9 @@ const Booking = () => {
     } catch (error) {
         console.error("Booking error", error);
         alert("server error. please try again later")
+        setModalStatus("Unsuccessfully")
+        setModalText("Failed to create booking")
+        setShowModal(true)
       
     }finally{
       setIsLoading(false)
@@ -156,6 +172,12 @@ const Booking = () => {
             >
               Submit Booking
             </button>
+            <ModalComponent 
+            show={showModal}
+            onClose={()=> setShowModal(false)}
+            title={modalStatus}
+            message={modalText}
+            />
 
         </div>
 

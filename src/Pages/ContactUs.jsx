@@ -1,11 +1,56 @@
-import React from 'react'
+import React, { useContext, useState } from 'react'
 import { useForm } from 'react-hook-form'
+import { authContext } from '../AuthContext/AuthContext'
+import ModalComponent from '../Components/ModalComponent'
 
 const ContactUs = () => {
-  const {register, handleSubmit, formState: {errors}} = useForm()
+  const {register, handleSubmit, reset, formState: {errors}} = useForm()
+  const [isLoading, setIsLoading] = useState(false)
 
-  const submitMessage = (data) =>{
+  const [content, setContent] = useState("")
+  const {showModal,setShowModal,modalStatus, setModalStatus,modalText, setModalText} = useContext(authContext)
+
+  const submitMessage = async(data) =>{
     console.log(data);
+    setIsLoading(true)
+    const formData = new FormData()
+    formData.append("name", data.name);
+    formData.append("email", data.email);
+    formData.append("phone", data.phone);
+    formData.append("message", data.message)
+
+    try {
+      const messageURL = import.meta.env.VITE_BASE_URL
+      const res = await fetch(`${messageURL}/message`, {
+        method: "POST",
+        headers: {
+          "Content-Type" : "application/json"
+        },
+        body: JSON.stringify(data)
+
+      });
+      const display = await res.json();
+      if (display.success){
+        setShowModal(true)
+        setModalText("Inquiry message sent successfully")
+        setModalStatus("success")
+        reset()
+        setContent("")
+       
+      }
+      else{
+        alert("something went wrong")
+      }
+    } catch (error) {
+      console.error("Message error", error);
+      alert("server error. Please try again later")
+      setModalStatus("Unsuccessfully")
+      setModalText("Failed to create booking")
+      setShowModal(true)
+      
+    }finally{
+      setIsLoading(false)
+    }
     
   }
   return (
@@ -116,6 +161,12 @@ const ContactUs = () => {
               className='bg-blue-600 text-white py-3 px-6 rounded-md hover:bg-blue-700 transition-all font-semibold'>
                 Send Message
               </button>
+              <ModalComponent
+               show={showModal}
+               onClose={()=> setShowModal(false)}
+               title={modalStatus}
+               message={modalText}
+               />
 
             </div>
 
