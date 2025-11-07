@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import {CheckCircle} from 'lucide-react'
+import WhatwedoComponent from '../Components/WhatwedoComponent'
 
 
 const AboutUs = () => {
@@ -45,28 +46,9 @@ const AboutUs = () => {
         <h2 className='text-3xl font-bold text-green-700 mb-8 text-center'>
           What We Do
         </h2>
-        <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-left'>
-          {[
-            'Regular Home & Office Cleaning',
-            'Deep Cleaning Services',
-            'Surface & Floor Cleaning',
-            'End-of-Tenancy Cleaning',
-            'Post-Renovation Cleanup',
-            'Custom Maintenance Plans',
-            'Airbnb cleaning',
-            'Caravan cleaning',
-            'Carpet cleaning'
-          ].map((services, index)=>(
-            <div
-            key={index}
-            className='bg-white border border-green-100 rounded-xl shadow-md hover:shadow-lg p-6 flex items-center space-x-3'>
-              <CheckCircle className='text-green-600 w-6 h-6' />
-              <p className='font-semibold text-gray-700'>{services}</p>
 
-            </div>
-          ))}
-
-        </div>
+        <WhatwedoComponent />
+       
       </section>
 
       {/* Why Choose Us....... */}

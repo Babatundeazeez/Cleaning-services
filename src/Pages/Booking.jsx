@@ -9,7 +9,7 @@ const Booking = () => {
   const [isLoading, setIsLoading] = useState(false)
 
   const onSubmit = async(data) =>{
-    console.log(data);
+    //console.log(data);
     setIsLoading(true)
     const formData = new FormData();
     formData.append("name", data.name);
@@ -18,7 +18,33 @@ const Booking = () => {
     formData.append("service", data.service);
     formData.append("date", data.date);
     formData.append("message", data.message)
-    alert("Form submitted successfully")
+    //alert("Form submitted successfully")
+
+    try {
+      const res = await fetch("http://localhost:3000/api/booking", {
+        method : "POST",
+        headers: {
+          "Content-Type" : "application/json"
+        },
+        body: JSON.stringify(data)
+      });
+
+      const shows = await res.json();
+      if (shows.success){
+        alert("Booking submitted successfully")
+      }
+      else{
+        alert("something went wrong")
+      }
+    } catch (error) {
+        console.error("Booking error", error);
+        alert("server error. please try again later")
+      
+    }finally{
+      setIsLoading(false)
+    }
+
+    
     
   }
   return (
@@ -75,7 +101,7 @@ const Booking = () => {
         placeholder='e.g +234 810 018 66661'
         className='w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500'
         {...register("phone", {required: "Phone number is required"})} />
-         {errors.email && <p className="text-red-500 text-sm">{errors.phone.message}</p>}
+         {errors.phone && <p className="text-red-500 text-sm">{errors.phone.message}</p>}
        </div>
        {/* For Services type....... */}
 

@@ -40,16 +40,26 @@ const HomePage = () => {
 
        
         {[
-          {title: 'Regular Cleaning', desc: 'Keep your home or office clean on a weekly or monthly schedule.'},
-          {title: 'Deep Cleaning', desc: 'Detailed cleaning for hidden areas — perfect for spring or post-event cleaning.' },
-          {title: 'Office Cleaning', desc: 'Maintain a fresh and productive workspace with our corporate cleaning solutions.'},
-          {title: 'End of Tenancy', desc: 'Move-out cleanups that restore your property to its sparkling best.'}
+          {title: 'Regular Cleaning', desc: 'Keep your home or office clean on a weekly or monthly schedule.', image : "./Image/Image7.jpeg"},
+          {title: 'Deep Cleaning', desc: 'Detailed cleaning for hidden areas — perfect for spring or post-event cleaning.', image: "./Image/image1.jpeg" },
+          {title: 'Office Cleaning', desc: 'Maintain a fresh and productive workspace with our corporate cleaning solutions.', image: "./Image/image2.jpeg"},
+          {title: 'End of Tenancy', desc: 'Move-out cleanups that restore your property to its sparkling best.', image: "./Image/Image 4.jpeg"}
 
         ].map((service, index) => (
           <div 
           key={index}
           className='p-8 bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300'
           >
+            {/* image...... */}
+            <div className='w-full h-40 mb-4 overflow-hidden rounded-lg'>
+              <img src={service.image} 
+              alt={service.image}
+              className='w-full h-full object-cover hover:scale-105 transition-transform duration-300' />
+
+            </div>
+
+            {/* title and description */}
+            
             <h3 className='font-semibold text-lg text-blue-600 mb-3'>{service.title}</h3>
             <p className='text-gray-600 text-sm sm:text-base leading-relaxed'>{service.desc}</p>
 
