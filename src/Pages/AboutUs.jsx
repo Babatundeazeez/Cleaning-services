@@ -11,7 +11,7 @@ const AboutUs = () => {
       {/* Hero section.... */}
       <section className='relative bg-green-50 py-20 px-6 md:px-20 text-center'>
         <h1 className='text-4xl md:text-5xl font-extrabold text-green-700 mb-4'>
-        About Suntim Cleaning Services
+        About Sutim Cleaning Services
         </h1>
         <p className='text-lg text-gray-600 max-w-3xl mx-auto'>
         We are professional cleaning company committed to providing safe and reliable cleaning solutions for homes and offices
@@ -24,8 +24,8 @@ const AboutUs = () => {
         <div>
           <h2 className='text-3xl font-bold text-green-700 mb-4'>Who we Are</h2>
           <p className='text-gray-700 leading-relaxed mb-4'>
-            At <strong>Suntim Cleaning Services</strong>, we are dedicated to providing
-            top-quality residential and commercial cleaning services. As a division of <strong>Suntim Healthcare Services Ltd</strong>, our operations reflect
+            At <strong>Sutim Cleaning Services</strong>, we are dedicated to providing
+            top-quality residential and commercial cleaning services. As a division of <strong>Sutim Healthcare Services Ltd</strong>, our operations reflect
             the same precision, care, and professionalism that define our brand.
           </p>
           <p className='text-gray-700 leading-relaxed'>
@@ -35,7 +35,7 @@ const AboutUs = () => {
         </div>
         <div>
           <img 
-          src="./Image/image1.jpeg" 
+          src="./Image/Istockimage3.webp" 
           alt="image"
           className='rounded-2xl shadow-lg w-full max-w-md object-cover' />
         </div>
@@ -81,7 +81,7 @@ const AboutUs = () => {
         Let’s Keep Your Space Clean
         </h2>
         <p className='text-lg max-w-2xl mx-auto mb-6'>
-        Whether you need a one-time deep clean or regular maintenance,<strong> Suntim Cleaning Services</strong> is here to help you maintain freshness and comfort every day.
+        Whether you need a one-time deep clean or regular maintenance,<strong> Sutim Cleaning Services</strong> is here to help you maintain freshness and comfort every day.
 
         </p>
         

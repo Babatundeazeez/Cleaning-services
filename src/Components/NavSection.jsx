@@ -16,17 +16,20 @@ const NavSection = () => {
             {/* logo section */}
             <div className='flex flex-col'>
                  <div className='flex items-center space-x-2 sm:space-x-3'>
-                     <img 
-                     src="./Image/cleaningImg.jpeg" 
+                    <Link to="/">
+                    <img 
+                     src="./Image/sutimLogo.jpg" 
                      alt="MyLogo" 
-                     className='w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 object-contain rounded-full'/>
+                     className='w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 object-contain rounded-full'
+                     />
+                    </Link>
                      {/* companyName */}
                      <h2 className='text-lg sm:text-xl md:text-2xl lg:text-3xl font-extrabold text-blue-600 tracking-tight'>
-                    Suntim Cleaning Services
+                    Sutim Cleaning Services
                      </h2>
                  </div>
                 <span className='text-[10px] sm:text-xs text-gray-500 font-medium'>
-               A division of Suntim Healthcare services Ltd
+               A division of Sutim Healthcare services Ltd
             </span>
 
             </div>

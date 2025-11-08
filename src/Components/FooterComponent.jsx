@@ -9,7 +9,7 @@ const FooterComponent = () => {
     <div className='max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10'>
         {/* Brand Info....... */}
         <div>
-            <h2 className='text-2xl font-bold text-white mb-3'>Suntim Cleaning Services</h2>
+            <h2 className='text-2xl font-bold text-white mb-3'>Sutim Cleaning Services</h2>
             <p className='text-sm leading-6'>
             We provide reliable residential and commercial cleaning services with 
             modern tools and eco-friendly solutions — ensuring your space stays fresh, 
@@ -38,7 +38,7 @@ const FooterComponent = () => {
 
                 </li>
                 <li className='flex items-center gap-2'>
-                    <Phone size={18} /> <span>+234 816 227 3600</span>
+                    <Phone size={18} /> <span>+447 881 189 989</span>
 
                 </li>
                 <li className='flex items-center gap-2'>
@@ -71,7 +71,7 @@ const FooterComponent = () => {
     </div>
      {/* Bottom section.......... */}
      <div className='border-t border-gray-700 mt-10 pt-6 text-center text-sm text-gray-400'>
-        © {new Date().getFullYear()}Suntim Cleaning Services. All rights reserved. | Designed by Babzeeztech solution
+        © {new Date().getFullYear()}Sutim Cleaning Services. All rights reserved. | Designed by Babzeeztech solution
 
         </div>
 

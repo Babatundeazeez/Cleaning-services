@@ -5,27 +5,27 @@ const WhatwedoComponent = () => {
     const services = [
         {
             title : "Regular Home & Office Cleaning",
-            image : "./Image/Image 3.jpeg"
+            image : "./Image/Istockimage3.webp"
         },
         {
             title : "Deep Cleaning Services",
-            image : "./Image/Image 4.jpeg"
+            image : "./Image/Istockimage2.jpg"
         },
         {
             title : "Surface & Floor Cleaning",
-            image : "./Image/Image 5.jpeg"
+            image : "./Image/Istockimage4.webp"
         },
         {
             title : "End-of-Tenancy Cleaning",
-            image : "./Image/image1.jpeg"
+            image : "./Image/Istockimage6.webp"
         },
         {
             title : "Post-Renovation Cleanup",
-            image : "./Image/image2.jpeg"
+            image : "./Image/IstockImage.jpg"
         },
         {
             title : "Custom Maintenance Plans",
-            image : "./Image/Image7.jpeg"
+            image : "./Image/cleaningcom.jpg"
         }
     ]
   return (

@@ -23,7 +23,7 @@ const HomePage = () => {
      </section>
   {/* About services ....... */}
      <section className='py-16 px-6 text-center bg-white'>
-      <h2 className='text-2xl md:text-3xl font-bold text-gray-800 mb-6'>About Suntim Cleaning Services</h2>
+      <h2 className='text-2xl md:text-3xl font-bold text-gray-800 mb-6'>About Sutim Cleaning Services</h2>
       <p className='text-gray-600 max-w-3xl mx-auto text-base sm:text-lg leading-relaxed'>
       We are a trusted cleaning agency with a mission to bring comfort, hygiene, and sparkle to homes and offices across Nigeria. Our trained team uses eco-friendly products and advanced cleaning techniques to ensure spotless results.
       </p>
@@ -40,10 +40,10 @@ const HomePage = () => {
 
        
         {[
-          {title: 'Regular Cleaning', desc: 'Keep your home or office clean on a weekly or monthly schedule.', image : "./Image/Image7.jpeg"},
-          {title: 'Deep Cleaning', desc: 'Detailed cleaning for hidden areas — perfect for spring or post-event cleaning.', image: "./Image/image1.jpeg" },
-          {title: 'Office Cleaning', desc: 'Maintain a fresh and productive workspace with our corporate cleaning solutions.', image: "./Image/image2.jpeg"},
-          {title: 'End of Tenancy', desc: 'Move-out cleanups that restore your property to its sparkling best.', image: "./Image/Image 4.jpeg"}
+          {title: 'Regular Cleaning', desc: 'Keep your home or office clean on a weekly or monthly schedule.', image : "./Image/cleaningcom2.jpg"},
+          {title: 'Deep Cleaning', desc: 'Detailed cleaning for hidden areas — perfect for spring or post-event cleaning.', image: "./Image/cleaningcom3.jpg" },
+          {title: 'Office Cleaning', desc: 'Maintain a fresh and productive workspace with our corporate cleaning solutions.', image: "./Image/cleaningcom4.jpg"},
+          {title: 'End of Tenancy', desc: 'Move-out cleanups that restore your property to its sparkling best.', image: "./Image/cleaningcom5.jpg"}
 
         ].map((service, index) => (
           <div 
