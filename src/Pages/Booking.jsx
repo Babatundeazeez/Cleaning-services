@@ -72,7 +72,7 @@ const Booking = () => {
           Book Your Cleaning Service 🧼
         </h1>
         <p className="text-gray-600 max-w-2xl mx-auto text-lg">
-          Schedule a cleaning appointment with Suntim Cleaning Services — quick, easy, and reliable.
+          Schedule a cleaning appointment with Sutim Cleaning Services — quick, easy, and reliable.
         </p>
 
       </section>
@@ -114,7 +114,7 @@ const Booking = () => {
        <label htmlFor="phone" className='block text-sm font-semibold text-gray-700 mb-2'>Phone Number</label>
         <input type="tel"
         id='phone'
-        placeholder='e.g +234 810 018 66661'
+        placeholder='e.g +447 881 189 989'
         className='w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500'
         {...register("phone", {required: "Phone number is required"})} />
          {errors.phone && <p className="text-red-500 text-sm">{errors.phone.message}</p>}
@@ -188,7 +188,7 @@ const Booking = () => {
       <section className='text-center mt-16'>
       <h2 className="text-xl md:text-2xl font-bold text-blue-700 mb-3">Need Help Booking?</h2>
         <p className="text-gray-600">
-          Call our support team at <span className="font-semibold text-blue-600">+234 800 123 4567</span> <br />
+          Call our support team at <span className="font-semibold text-blue-600">+447 881 189 989</span> <br />
           or email us at <span className="font-semibold text-blue-600">info@suntimcleaning.com</span>
         </p>
 
