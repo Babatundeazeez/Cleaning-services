@@ -1,31 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Parallax} from 'react-parallax'
 
 const HomePage = () => {
   return (
     <div className='mt-4 md:mt-6'>
-    <Parallax bgImage='/Image/Illustration1.jpg' strength={400}>
-    <div style={{height : 600}}>
-    <section className='bg-blue-50 py-20 px-6 text-center flex flex-col items-center justify-center'>
-      <h1 className='text-3xl sm:text-4xl md:text-5xl font-extrabold text-blue-700 mb-4 leading-tight'>
-      Sparkling Clean Spaces, Every Time ✨
-      </h1>
-      <p className='text-gray-600 text-base sm:text-lg max-w-2xl mx-auto mb-6'>
-      Professional home and office cleaning services you can trust — from deep cleaning to end-of-tenancy cleanup, we make your space shine beautifully.
-
-      </p>
-
-      <Link to='/Booking' 
-      className='bg-blue-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg 
-                     hover:bg-blue-700 hover:scale-105 active:scale-100 transition-transform duration-200'
-      >
-      Book Your Cleaning Now
-      </Link>
-
-     </section>
-    </div>
-    </Parallax>
+    
   {/* About services ....... */}
      <section className='py-16 px-6 text-center bg-white'>
       <h2 className='text-2xl md:text-3xl font-bold text-gray-800 mb-6'>About Sutim Cleaning Services</h2>
