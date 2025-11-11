@@ -1,10 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { Parallax} from 'react-parallax'
 
 const HomePage = () => {
   return (
     <div className='mt-4 md:mt-6'>
-     <section className='bg-blue-50 py-20 px-6 text-center flex flex-col items-center justify-center'>
+    <Parallax bgImage='/Image/Illustration1.jpg' strength={400}>
+    <div style={{height : 600}}>
+    <section className='bg-blue-50 py-20 px-6 text-center flex flex-col items-center justify-center'>
       <h1 className='text-3xl sm:text-4xl md:text-5xl font-extrabold text-blue-700 mb-4 leading-tight'>
       Sparkling Clean Spaces, Every Time ✨
       </h1>
@@ -21,6 +24,8 @@ const HomePage = () => {
       </Link>
 
      </section>
+    </div>
+    </Parallax>
   {/* About services ....... */}
      <section className='py-16 px-6 text-center bg-white'>
       <h2 className='text-2xl md:text-3xl font-bold text-gray-800 mb-6'>About Sutim Cleaning Services</h2>

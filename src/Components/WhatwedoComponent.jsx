@@ -13,7 +13,7 @@ const WhatwedoComponent = () => {
         },
         {
             title : "Surface & Floor Cleaning",
-            image : "./Image/Istockimage4.webp"
+            image : "./Image/floor2.jpg"
         },
         {
             title : "End-of-Tenancy Cleaning",
@@ -25,7 +25,7 @@ const WhatwedoComponent = () => {
         },
         {
             title : "Custom Maintenance Plans",
-            image : "./Image/cleaningcom.jpg"
+            image : "./Image/woman7.jpg"
         }
     ]
   return (
