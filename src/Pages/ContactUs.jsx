@@ -189,9 +189,9 @@ const ContactUs = () => {
                     </svg>
                     Sending .......
                     </>
-                  ) : ( "Submit Message")
+                  ) : ( "Send Message")
                 }
-                Send Message
+                
 
               </button>
               <ModalComponent
