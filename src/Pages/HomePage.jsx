@@ -40,10 +40,10 @@ const HomePage = () => {
 
        
         {[
-          {title: 'Regular Cleaning', desc: 'Keep your home or office clean on a weekly or monthly schedule.', image : "./Image/cleaningcom2.jpg"},
-          {title: 'Deep Cleaning', desc: 'Detailed cleaning for hidden areas — perfect for spring or post-event cleaning.', image: "./Image/cleaningcom3.jpg" },
-          {title: 'Office Cleaning', desc: 'Maintain a fresh and productive workspace with our corporate cleaning solutions.', image: "./Image/cleaningcom4.jpg"},
-          {title: 'End of Tenancy', desc: 'Move-out cleanups that restore your property to its sparkling best.', image: "./Image/cleaningcom5.jpg"}
+          {title: 'Regular Cleaning', desc: 'Keep your home or office clean on a weekly or monthly schedule.', image : "./Image/floor2.jpg"},
+          {title: 'Deep Cleaning', desc: 'Detailed cleaning for hidden areas — perfect for spring or post-event cleaning.', image: "./Image/man3.jpg" },
+          {title: 'Office Cleaning', desc: 'Maintain a fresh and productive workspace with our corporate cleaning solutions.', image: "./Image/man1.jpg"},
+          {title: 'End of Tenancy', desc: 'Move-out cleanups that restore your property to its sparkling best.', image: "./Image/woman3.jpg"}
 
         ].map((service, index) => (
           <div 

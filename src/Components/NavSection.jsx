@@ -18,7 +18,7 @@ const NavSection = () => {
                  <div className='flex items-center space-x-2 sm:space-x-3'>
                     <Link to="/">
                     <img 
-                     src="./Image/sutimLogo.jpg" 
+                     src="./Image/sutimserviceLogo.jpg" 
                      alt="MyLogo" 
                      className='w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 object-contain rounded-full'
                      />
