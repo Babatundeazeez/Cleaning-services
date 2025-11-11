@@ -82,7 +82,7 @@ const ContactUs = () => {
             <div className='space-y-4'>
               <div>
                 <h3 className='font-semibold text-blue-600'>Phone</h3>
-                <p className='text-gray-700'>+234 816 227 3600</p>
+                <p className='text-gray-700'>+447 881 189 989</p>
               </div>
               <div>
                 <h3 className='font-semibold text-blue-600'>Address</h3>
@@ -90,7 +90,7 @@ const ContactUs = () => {
               </div>
               <div>
                 <h3 className='font-semibold text-blue-600'>Email</h3>
-                <p className='text-gray-700'>info@suntimcleaning.com</p>
+                <p className='text-gray-700'>info@timothysutimservices.co.uk</p>
               </div>
 
             </div>

@@ -42,7 +42,7 @@ const FooterComponent = () => {
 
                 </li>
                 <li className='flex items-center gap-2'>
-                    <Mail size={18} /> <span>info@suntimcleaning.com</span>
+                    <Mail size={18} /> <span>info@timothysutimservices.co.uk</span>
                 </li>
 
             </ul>
